@@ -31,4 +31,4 @@ class ADS1115:
             return res - 65536
         
     def read_voltage(self, channel=0):
-        return self.read(channel) * 0.000125 * self.gain
+        return self.read(channel) * self.gain
